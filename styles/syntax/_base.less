@@ -21,22 +21,22 @@
 }
 
 .syntax--keyword {
-  color: @hue-3;
+  color: @hue-5;
 
   &.syntax--control {
-    color: @hue-3;
+    color: @hue-5;
   }
 
-  &.syntax--operator {
+  &.syntax--operator.syntax--combinator {
     color: @mono-1;
   }
 
   &.syntax--other.syntax--special-method {
-    color: @hue-2;
+    color: @hue-5;
   }
 
   &.syntax--other.syntax--unit {
-    color: @hue-6;
+    color: @hue-5;
   }
 }
 
@@ -59,10 +59,10 @@
 }
 
 .syntax--constant {
-  color: @hue-6;
+  color: @hue-3;
 
   &.syntax--variable {
-    color: @hue-6;
+    color: @mono-1;
   }
 
   &.syntax--character.syntax--escape {
@@ -70,7 +70,7 @@
   }
 
   &.syntax--numeric {
-    color: @hue-6;
+    color: @hue-3;
   }
 
   &.syntax--other.syntax--color {
@@ -78,28 +78,29 @@
   }
 
   &.syntax--other.syntax--symbol {
-    color: @hue-1;
+    color: @hue-6-2;
   }
 }
 
 .syntax--variable {
-  color: @hue-5;
+  color: @mono-1;
 
   &.syntax--interpolation {
     color: @hue-5-2;
   }
 
   &.syntax--parameter {
-    color: @mono-1;
+    color: @hue-6;
+    font-style: italic;
   }
 }
 
 .syntax--string {
-  color: @hue-4;
+  color: @hue-6-2;
 
 
   &.syntax--regexp {
-    color: @hue-1;
+    color: @hue-6;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @hue-6-2;
@@ -140,11 +141,15 @@
       color: @hue-3;
       font-style: italic;
     }
+
+    &.syntax--string {
+      color: @hue-5;
+    }
   }
 
   &.syntax--section {
     &.syntax--embedded {
-      color: @hue-5-2;
+      color: @hue-5;
     }
 
     &.syntax--method,
@@ -152,12 +157,16 @@
     &.syntax--inner-class {
       color: @mono-1;
     }
+
+    &.syntax--array {
+      color: @hue-5;
+    }
   }
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @hue-6-2;
+    color: @hue-1;
   }
 
   &.syntax--type {
@@ -175,12 +184,12 @@
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @hue-2;
+    color: @hue-6;
   }
 
   &.syntax--name.syntax--class,
   &.syntax--name.syntax--type.syntax--class {
-    color: @hue-6-2;
+    color: @hue-1;
   }
 
   &.syntax--name.syntax--section {
@@ -192,10 +201,14 @@
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @hue-6;
+    color: @hue-4;
 
     &.syntax--id {
-      color: @hue-2;
+      color: @hue-6;
+    }
+
+    &.syntax--parent-selector {
+      color: @hue-5;
     }
   }
 }
@@ -229,7 +242,7 @@
   }
 
   &.syntax--selector {
-    color: @hue-3;
+    color: @mono-1;
   }
 
   &.syntax--separator {
@@ -291,7 +304,8 @@
   }
 
   &.syntax--link {
-    color: @hue-1;
+    color: @hue-6-2;
+    text-decoration: underline;
   }
 
   &.syntax--inserted {

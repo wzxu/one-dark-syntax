@@ -1,14 +1,14 @@
 {
-  "name": "one-dark-syntax",
+  "name": "one-monokai",
   "theme": "syntax",
   "version": "1.7.1",
-  "description": "A dark syntax theme",
+  "description": "Monokai Extended theme based on One Dark",
   "keywords": [
     "dark",
-    "blue",
+    "monokai",
     "syntax"
   ],
-  "repository": "https://github.com/atom/one-dark-syntax",
+  "repository": "https://github.com/wzxu/one-monokai",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

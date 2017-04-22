@@ -5,7 +5,7 @@
 // General colors
 @syntax-text-color:            @syntax-fg;
 @syntax-cursor-color:          @syntax-accent;
-@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-color:       #444444;
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
 
@@ -21,14 +21,14 @@
 // Gutter colors
 @syntax-gutter-text-color:                @syntax-gutter;
 @syntax-gutter-text-color-selected:       @syntax-fg;
-@syntax-gutter-background-color:          @syntax-bg; // unused
-@syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
+// @syntax-gutter-background-color:          @syntax-bg; // unused
+// @syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
 
 // Git colors - For git diff info. i.e. in the gutter
-@syntax-color-renamed:  hsl(208, 100%, 60%);
-@syntax-color-added:    hsl(150,  60%, 54%);
-@syntax-color-modified: hsl(40,   60%, 70%);
-@syntax-color-removed:  hsl(0,    70%, 60%);
+@syntax-color-renamed:  @hue-1;
+@syntax-color-added:    @hue-4;
+@syntax-color-modified: @hue-3;
+@syntax-color-removed:  @hue-5;
 
 // For language entity colors
 @syntax-color-variable:   @hue-5;
@@ -48,7 +48,7 @@
 // Custom Syntax Variables -----------------------------------
 // Don't use in packages
 
-@syntax-cursor-line: hsla(@syntax-hue, 100%,  80%, .04); // needs to be semi-transparent to show search results
+@syntax-cursor-line: hsla(0, 0%, 100%, .08); // needs to be semi-transparent to show search results
 
 @syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
 @syntax-deprecated-bg: @syntax-color-modified;

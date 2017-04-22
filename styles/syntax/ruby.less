@@ -2,4 +2,27 @@
   .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
     color: inherit;
   }
+
+  .syntax--keyword {
+    &.syntax--control {
+      color: @hue-4;
+
+      &.syntax--pseudo-method,
+      &.syntax--start-block {
+        color: @hue-5;
+      }
+
+      &.syntax--def {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .syntax--instance .syntax--punctuation.syntax--definition.syntax--variable {
+    color: @hue-6;
+  }
+
+  .syntax--object .syntax--punctuation.syntax--definition.syntax--variable {
+    color: @hue-5;
+  }
 }

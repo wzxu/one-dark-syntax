@@ -60,11 +60,11 @@ atom-text-editor {
       -webkit-font-smoothing: antialiased;
 
       &.cursor-line {
-        color: @syntax-gutter-text-color-selected;
-        background-color: @syntax-gutter-background-color-selected;
+        // color: @syntax-gutter-text-color-selected;
+        background-color: @syntax-selection-color;
       }
       &.cursor-line-no-selection {
-        background-color: transparent;
+        background-color: @syntax-cursor-line;
       }
 
       .icon-right {
